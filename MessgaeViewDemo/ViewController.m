@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YLYMessageView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    YLYMessageView *messageView = [[YLYMessageView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:messageView];
 }
 
 - (void)didReceiveMemoryWarning {
